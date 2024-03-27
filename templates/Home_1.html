@@ -25,11 +25,38 @@
       just you need to know your soil nutrients for this you can test your soil in lab.</p>
       <br>
       <h3 style="color: rgb(232, 14, 14);">Let's Start New Journey With Ajay Kathat</h3>
-      <br>
-      <h2 style="color: rgb(231, 13, 13);">Click following button for Crop recommandation</h2>
+
     </main>
-     <form action="/Predict">
-      <input type="submit" id="Predict" name="Predict" action="/Predict" value="Predict">
-     </form>
+    <section class="blog py-5">
+      <div class="container py-md-5">
+        <h3 class="heading mb-sm-5 mb-4 text-center"> Our Services</h3>
+        <div class="row blog-grids">
+          <div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+            <img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" />
+            <a href="{{ url_for('prediction') }}">
+              <div class="blog-info">
+    
+                <h4>Crop</h4>
+    
+                <p class="mt-2"> Recommendation about the type of crops to be cultivated which is best suited
+                  for the respective conditions</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+            <img src="{{ url_for('static', filename='images/crop_background.jpg') }}" class="img-fluid" alt="">
+    
+            <!-- <img src="images/s4.jpg" class="img-fliud" alt="" /> -->
+            <a href="{{ url_for('crop_yield') }}">
+              <div class="blog-info">
+                <h4>Crop_yield</h4>
+                <p class="mt-2"> Harvested production per unit of harvested area for crop products</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
